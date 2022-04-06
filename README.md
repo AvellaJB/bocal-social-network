@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+#Objectifs:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Développer une application web front-end en équipe
 
-## Available Scripts
+##Sujet:
 
-In the project directory, you can run:
+Au cours de ce projet, vous devrez développer la partie front-end d'un tout
+nouveau réseau social. Vous serez libre de choisir la thématique et le mode de
+fonctionnement qui vous inspirera le plus.
 
-### `npm start`
+Votre réseau social devra présenter les fonctionnalités suivantes:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+création de compte
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+connexion et déconnexion;
 
-### `npm test`
+création de posts;
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ajout de commentaires sur les posts;
 
-### `npm run build`
+édition de son profil;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+page personnelle présenant également les posts les plus récents.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Par défaut, toutes les publications seront visibles dans un fil d'actualité
+accesible à tous les utilisateurs (connectés ou non). Pour poster, aimer un post
+ou commenter, il faudra être connecté.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Les choix graphiques et d'interface sont libres. Cepedant le design devra être
+moderne et l'expérience utilisateur soignée pour faciliter la navigation de
+l'ensemble de vos futurs utilisateurs de manière intuitive.
 
-### `npm run eject`
+Votre application devra utiliser l'API web pré-existante à l'aide de la
+librairie. Cette librairie est à copier dans un dossier lib de votre projet.
+Pour en savoir plus, consulter le fichier readme.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Quelques contraintes complémentaires sont à respecter:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+le projet doit être réalisé en équipe de 2 à 3 personnes; le travail d'équipe
+doit s'effectuer avec Git et Github; le projet doit être réalisé avec React
