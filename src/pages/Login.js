@@ -1,6 +1,6 @@
-//Demander simplemetn les identifiants de la personne.
-// Ajouter un liens vers le CreateProfil.
-
+/* 
+Le login fait appel à une fonction login() et prend en paramètres l'email et le password. 
+*/
 import React from "react";
 
 function Login() {
