@@ -2,8 +2,8 @@
 
 import React from "react";
 
-function CreateProfile() {
+function Register() {
   return <div>CreateProfile</div>;
 }
 
-export default CreateProfile;
+export default Register;
