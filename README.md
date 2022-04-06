@@ -38,5 +38,3 @@ Quelques contraintes complémentaires sont à respecter:
 
 le projet doit être réalisé en équipe de 2 à 3 personnes; le travail d'équipe
 doit s'effectuer avec Git et Github; le projet doit être réalisé avec React
-
-Editer le readme
