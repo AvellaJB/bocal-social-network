@@ -14,7 +14,7 @@ import React from "react";
 import { getPosts } from "../lib";
 import { useState, useEffect } from "react";
 
-function Post() {
+function Post({ justPosted }) {
   const [posts, setPosts] = useState([]);
 
   const allPosts = async () => {
@@ -24,7 +24,7 @@ function Post() {
 
   useEffect(() => {
     allPosts();
-  }, []);
+  }, [justPosted]);
 
   return (
     <div>

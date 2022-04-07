@@ -8,7 +8,8 @@ Create post est donc un formulaire qui envoie les données dans la fonction crea
 import React from "react";
 import { useState } from "react";
 import { createPost } from "../lib";
-function CreatePost() {
+
+function CreatePost({ onJustPosted }) {
   /* useState récupère les données du formulaire, le titre et le post. */
 
   const [contentInput, setContentInput] = useState("");
@@ -20,6 +21,7 @@ function CreatePost() {
   const sendPostToApi = (e) => {
     e.preventDefault();
     createPost(titleInput, contentInput);
+    onJustPosted();
   };
 
   return (

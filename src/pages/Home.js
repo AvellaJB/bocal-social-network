@@ -8,12 +8,19 @@ Les données seront envoyées via des Props.
 import React from "react";
 import CreatePost from "../components/CreatePost";
 import Post from "../components/Post";
+import { useState } from "react";
 
 function Home() {
+  const [justPosted, setJustPosted] = useState(0);
+
+  const justPostedHandler = () => {
+    setJustPosted(justPosted + 1);
+  };
+
   return (
     <div>
-      <CreatePost />
-      <Post />
+      <CreatePost onJustPosted={justPostedHandler} />
+      <Post justPosted={justPosted} />
     </div>
   );
 }
