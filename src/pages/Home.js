@@ -8,7 +8,6 @@ Les données seront envoyées via des Props.
 import React from "react";
 import CreatePost from "../components/CreatePost";
 import Post from "../components/Post";
-import { getPosts } from "../lib";
 
 function Home() {
   return (
