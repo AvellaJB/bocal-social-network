@@ -2,8 +2,10 @@
 
 ## Utilisation
 
-1. Copier le dossier de cette librairie dans un dossier lib (à créer si besoin) situé dans le dossier src de votre projet.
-2. Dans le fichier config.json, ajouter l'adresse de l'API de réseau social qui vous a été communiquée par l'intervenant.
+1. Copier le dossier de cette librairie dans un dossier lib (à créer si besoin)
+   situé dans le dossier src de votre projet.
+2. Dans le fichier config.json, ajouter l'adresse de l'API de réseau social qui
+   vous a été communiquée par l'intervenant.
 3. Importer et utiliser les fonctions dans vos composant, par exemple:
 
 ```
@@ -24,7 +26,9 @@ function App() {
 
 ## Liste des fonctions
 
-**Attention:** Toutes les fonctions retournant une promesse (Promise) sont asynchrones. Elle doivent donc être appelées dans une fonction async et avec le mot clef await.
+**Attention:** Toutes les fonctions retournant une promesse (Promise) sont
+asynchrones. Elle doivent donc être appelées dans une fonction async et avec le
+mot clef await.
 
 <dl>
 <dt><a href="#register">register(firstname, lastname, email, password)</a> ⇒ <code>Promise</code></dt>
@@ -72,7 +76,9 @@ function App() {
 
 Resgiter / Inscription - Cette fonction sert à créer un compte utilisateur
 
-**Valeur de retour**: <code>Promise</code> - La valeur de retour est une promesse (à récupérer avec await) contenant un objet: {success: Boolean, message: String | Undefined}.
+**Valeur de retour**: <code>Promise</code> - La valeur de retour est une
+promesse (à récupérer avec await) contenant un objet: {success: Boolean,
+message: String | Undefined}.
 
 | Param     | Type                | Description   |
 | --------- | ------------------- | ------------- |
@@ -87,7 +93,9 @@ Resgiter / Inscription - Cette fonction sert à créer un compte utilisateur
 
 Login / Connexion - Cette fonction sert à connecter un utilisateur
 
-**Valeur de retour**: <code>Promise</code> - La valeur de retour est une promesse (à récupérer avec await) contenant un objet: {success: Boolean, message: String | Undefined}
+**Valeur de retour**: <code>Promise</code> - La valeur de retour est une
+promesse (à récupérer avec await) contenant un objet: {success: Boolean,
+message: String | Undefined}
 
 | Param    | Type                | Description   |
 | -------- | ------------------- | ------------- |
@@ -100,9 +108,10 @@ Login / Connexion - Cette fonction sert à connecter un utilisateur
 
 Get Posts / Récupérer les posts de tous les utilisateurs
 
-**Valeur de retour**: <code>Promise</code> - La valeur de retour est une promesse (à récupérer avec await) contenant un objet en cas
-succès de la forme: {posts: [Posts], page: Number, totalPages: Number}. En cas d'erreur, l'objet resemblera à:
-{message: String}
+**Valeur de retour**: <code>Promise</code> - La valeur de retour est une
+promesse (à récupérer avec await) contenant un objet en cas succès de la forme:
+{posts: [Posts], page: Number, totalPages: Number}. En cas d'erreur, l'objet
+resemblera à: {message: String}
 
 | Param | Type                | Description                                  |
 | ----- | ------------------- | -------------------------------------------- |
@@ -115,7 +124,9 @@ succès de la forme: {posts: [Posts], page: Number, totalPages: Number}. En cas 
 
 Create post - Créer un post avec le compte utilisateur actuellement connecté
 
-**Valeur de retour**: <code>Promise</code> - La valeur de retour est une promesse (à récupérer avec await) contenant un objet: {success: Boolean, message: String | Undefined}
+**Valeur de retour**: <code>Promise</code> - La valeur de retour est une
+promesse (à récupérer avec await) contenant un objet: {success: Boolean,
+message: String | Undefined}
 
 | Param   | Type                | Description |
 | ------- | ------------------- | ----------- |
@@ -126,9 +137,12 @@ Create post - Créer un post avec le compte utilisateur actuellement connecté
 
 ## addComment(postId, content) ⇒ <code>Promise</code>
 
-Add comment - Ajouter un commentaire à un post avec le compte utilisateur actuellement connecté
+Add comment - Ajouter un commentaire à un post avec le compte utilisateur
+actuellement connecté
 
-**Valeur de retour**: <code>Promise</code> - La valeur de retour est une promesse (à récupérer avec await) contenant un objet: {success: Boolean, message: String | Undefined}
+**Valeur de retour**: <code>Promise</code> - La valeur de retour est une
+promesse (à récupérer avec await) contenant un objet: {success: Boolean,
+message: String | Undefined}
 
 | Param   | Type                | Description                              |
 | ------- | ------------------- | ---------------------------------------- |
@@ -139,9 +153,12 @@ Add comment - Ajouter un commentaire à un post avec le compte utilisateur actue
 
 ## addLike(postId) ⇒ <code>Promise</code>
 
-Add like - Ajouter un like à un post avec le compte utilisateur actuellement connecté
+Add like - Ajouter un like à un post avec le compte utilisateur actuellement
+connecté
 
-**Valeur de retour**: <code>Promise</code> - La valeur de retour est une promesse (à récupérer avec await) contenant un objet: {success: Boolean, message: String | Undefined}
+**Valeur de retour**: <code>Promise</code> - La valeur de retour est une
+promesse (à récupérer avec await) contenant un objet: {success: Boolean,
+message: String | Undefined}
 
 | Param  | Type                | Description                       |
 | ------ | ------------------- | --------------------------------- |
@@ -153,32 +170,37 @@ Add like - Ajouter un like à un post avec le compte utilisateur actuellement co
 
 Is user logged in - Verifier si l'utilisateur est connecté
 
-**Valeur de retour**: <code>Boolean</code> - La valeur de retour est un booleen  
+**Valeur de retour**: <code>Boolean</code> - La valeur de retour est un
+booleen  
 <a name="logout"></a>
 
 ## logout() ⇒ <code>Promise</code>
 
 Logout - Déconnexion
 
-**Valeur de retour**: <code>Promise</code> - La valeur de retour est une promesse (à récupérer avec await) contenant un objet: {success: Boolean}
+**Valeur de retour**: <code>Promise</code> - La valeur de retour est une
+promesse (à récupérer avec await) contenant un objet: {success: Boolean}
 <a name="getCurrentUserProfile"></a>
 
 ## getCurrentUserProfile() ⇒ <code>Promise</code>
 
-Get current user profile - Récuépérer les infromation du profil de l'utilisateur connecté
+Get current user profile - Récuépérer les infromation du profil de l'utilisateur
+connecté
 
-**Valeur de retour**: <code>Promise</code> - La valeur de retour est une promesse (à récupérer avec await) contenant un objet en cas
-succès de la forme: {firstname: String, lastname: String, email: String, age: Number, occupation: String}. En cas d'erreur, l'objet resemblera à:
-{message: String}  
+**Valeur de retour**: <code>Promise</code> - La valeur de retour est une
+promesse (à récupérer avec await) contenant un objet en cas succès de la forme:
+{firstname: String, lastname: String, email: String, age: Number, occupation:
+String}. En cas d'erreur, l'objet resemblera à: {message: String}  
 <a name="getUserProfile"></a>
 
 ## getUserProfile(userId) ⇒ <code>Promise</code>
 
 Get user profile - Récupérer les informations de profil d'un utilisateur
 
-**Valeur de retour**: <code>Promise</code> - La valeur de retour est une promesse (à récupérer avec await) contenant un objet en cas
-succès de la forme: {firstname: String, lastname: String, email: String, age: Number, occupation: String}. En cas d'erreur, l'objet resemblera à:
-{message: String}
+**Valeur de retour**: <code>Promise</code> - La valeur de retour est une
+promesse (à récupérer avec await) contenant un objet en cas succès de la forme:
+{firstname: String, lastname: String, email: String, age: Number, occupation:
+String}. En cas d'erreur, l'objet resemblera à: {message: String}
 
 | Param  | Type                | Description         |
 | ------ | ------------------- | ------------------- |
@@ -188,9 +210,12 @@ succès de la forme: {firstname: String, lastname: String, email: String, age: N
 
 ## updateCurrentUserProfile(firstname, lastname, email, age, occupation) ⇒ <code>Promise</code>
 
-Update current user profile - Modifier les informations du profil de l'utilisateur connecté
+Update current user profile - Modifier les informations du profil de
+l'utilisateur connecté
 
-**Valeur de retour**: <code>Promise</code> - La valeur de retour est une promesse (à récupérer avec await) contenant un objet: {success: Boolean, message: String | Undefined}.
+**Valeur de retour**: <code>Promise</code> - La valeur de retour est une
+promesse (à récupérer avec await) contenant un objet: {success: Boolean,
+message: String | Undefined}.
 
 | Param      | Type                | Description |
 | ---------- | ------------------- | ----------- |
