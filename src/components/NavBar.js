@@ -19,6 +19,7 @@ function NavBar() {
       <ul>
         <Link to={"/login"}>Login</Link>
         <Link to={"/profil"}>Profil</Link>
+        <Link to={"/createprofile"}>Register</Link>
         <Link to={"/"}>Home</Link>
       </ul>
     </div>
